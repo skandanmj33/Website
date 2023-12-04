@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My First Interactive Web Page</title>
+    </head>
+
+<body>
+    <div class="newcontent">
+        <p>This is a simple example of a Interactive web page. </p>
+        <p>I have used a very simple website to show. I have used HTML,CSS and Javascript</p>
+    </div>
+
+    <div>
+        <button id="ChangeColorButton">Change Background Color</button>
+    </div>
+
+    <script>
+
+        document.getElementById("changeColorButton").addEventListener("click",function() {
+            
+            const randomColor = '#' +math.florr(Math.random()*16777215).toString(16);
+
+            document.body.style.backgroundColor = randomColor;
+        });
+    </script>
+</body>
+</html>
